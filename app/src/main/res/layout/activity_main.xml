@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="281dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:cursorVisible="true"
+        android:focusable="false"
+        android:inputType="text"
+        android:longClickable="false"
+        android:textAlignment="textEnd"
+        android:textCursorDrawable="@null"
+        android:textSize="50dp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_marginTop="145dp"
+        android:columnCount="4">
+
+        <!-- Buttons for digits -->
+        <!--clearbutton-->
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/CalculatorButton"
+            android:text="AC"
+            android:textSize="24sp"/>
+        <Button
+            android:id="@+id/btn0"
+            style="@style/CalculatorButton"
+            android:text="0" />
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/CalculatorButton"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            style="@style/CalculatorButton"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/CalculatorButton"
+            android:text="7" />
+        <Button
+            android:id="@+id/btn8"
+            style="@style/CalculatorButton"
+            android:text="8" />
+        <Button
+            android:id="@+id/btn9"
+            style="@style/CalculatorButton"
+            android:text="9" />
+
+
+        <!-- Add more buttons for other digits -->
+
+        <!-- Operator buttons -->
+
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/CalculatorButton"
+            android:text="*" />
+
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/CalculatorButton"
+            android:text="4" />
+        <Button
+            android:id="@+id/btn5"
+            style="@style/CalculatorButton"
+            android:text="5" />
+        <Button
+            android:id="@+id/btn6"
+            style="@style/CalculatorButton"
+            android:text="6" />
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/CalculatorButton"
+            android:text="/" />
+        <Button
+            android:id="@+id/btn1"
+            style="@style/CalculatorButton"
+            android:text="1" />
+        <Button
+            android:id="@+id/btn2"
+            style="@style/CalculatorButton"
+            android:text="2" />
+        <Button
+            android:id="@+id/btn3"
+            style="@style/CalculatorButton"
+            android:text="3" />
+        <!-- Equals and Clear buttons -->
+        <Button
+            android:id="@+id/btnEquals"
+            style="@style/CalculatorButton"
+            android:text="=" />
+
+
+    </GridLayout>
+
+</RelativeLayout>
